@@ -158,7 +158,7 @@
         </div>
         
         <button class="generate-btn" id="generateBtn" type="button">
-            <i class="fas fa-shuffle" aria-hidden="true"></i> Generate Lunch!
+            <i class="fas fa-random" aria-hidden="true"></i> Generate Lunch!
         </button>
         
         <p class="footer">Click the button again if you can't decide!</p>
@@ -175,9 +175,9 @@
             const lunchMenu = [
                 { name: "Pizza", icon: "fas fa-pizza-slice" },
                 { name: "Sushi", icon: "fas fa-fish" },
-                { name: "Burger", icon: "fas fa-burger" },
+                { name: "Burger", icon: "fas fa-hamburger" },
                 { name: "Salad", icon: "fas fa-leaf" },
-                { name: "Tacos", icon: "fas fa-utensils" },
+                { name: "Tacos", icon: "fas fa-utensil-spoon" },
                 { name: "Ramen", icon: "fas fa-bowl-food" },
                 { name: "Sandwich", icon: "fas fa-bread-slice" },
                 { name: "Pasta", icon: "fas fa-bowl-food" },
@@ -187,19 +187,6 @@
                 { name: "BBQ", icon: "fas fa-fire" }
             ];
             
-            let previousIndex = -1;
-
-            function getRandomIndex() {
-                let randomIndex;
-
-                do {
-                    randomIndex = Math.floor(Math.random() * lunchMenu.length);
-                } while (lunchMenu.length > 1 && randomIndex === previousIndex);
-
-                previousIndex = randomIndex;
-                return randomIndex;
-            }
-
             // Function to generate random lunch
             function generateRandomLunch() {
                 generateBtn.disabled = true;
@@ -208,7 +195,8 @@
                 lunchDisplay.classList.remove('fade-in');
                 
                 // Get a random lunch option
-                const selectedLunch = lunchMenu[getRandomIndex()];
+                const randomIndex = Math.floor(Math.random() * lunchMenu.length);
+                const selectedLunch = lunchMenu[randomIndex];
                 
                 // Briefly show loading state
                 foodIcon.className = 'fas fa-spinner fa-spin';

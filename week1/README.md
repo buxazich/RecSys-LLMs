@@ -16,9 +16,8 @@ The purpose of this work is to investigate the provided prompt and starter code,
 | --- | --- |
 | The original prompt asked for a new project instead of an audit. | Replaced it with a prompt that explicitly requires minimal corrections to the starter files. |
 | The README template listed files that did not exist. | Documented the actual one-file application structure. |
-| Several Font Awesome icon names were invalid or outdated. | Replaced them with valid Font Awesome 6.4.0 classes. |
+| Three Font Awesome icon names were unavailable in the linked stylesheet. | Replaced `fa-bowl-hot`, `fa-pasta`, and `fa-bowl` with valid Font Awesome 6.4.0 classes. |
 | Rapid clicks could start overlapping delayed updates. | Disabled the button while a result is being generated. |
-| The same lunch could appear twice in a row. | Excluded the immediately previous result from the next draw. |
 | Dynamic results were not announced by assistive technology. | Added a live status region and hid decorative icons from screen readers. |
 | Keyboard focus and reduced-motion preferences were not handled. | Added visible focus and reduced-motion styles. |
 
@@ -27,7 +26,6 @@ The purpose of this work is to investigate the provided prompt and starter code,
 1. The page stores the starter lunch options in a JavaScript array.
 2. On page load or button click, JavaScript selects a random array item.
 3. The selected lunch name and icon appear after a short loading animation.
-4. The immediately previous option is excluded from the next draw.
 
 ## Project structure
 
