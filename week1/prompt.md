@@ -1,25 +1,111 @@
-# Homework 1: Corrected Prompt
+# Homework 1: Random Lunch Menu Recommender
 
-## Problem with the original prompt
+I am working with a provided starter project for a Random Lunch Menu Generator.
 
-The original request was too broad: it asked the AI assistant to create a random lunch recommender and publish it on GitHub Pages. That led the assistant to propose a new project instead of investigating and correcting the provided starter code.
+The starter project contains:
 
-## Corrected prompt
+- `index.html` — the provided application code with inline HTML, CSS, and JavaScript.
+- `prompt.md` — the original AI prompt and generated project description.
 
-> Review the provided Random Lunch Menu Generator starter project. Do not create a new implementation from scratch and do not replace its design or core random-selection behavior.
->
-> First, inspect the supplied `index.html` and identify concrete HTML, CSS, JavaScript, icon, accessibility, and documentation errors. Then make the smallest reasonable changes needed to fix those errors while preserving the starter project's structure and appearance.
->
-> In particular, verify that every Font Awesome class exists in the linked Font Awesome 6.4.0 stylesheet, that repeated button clicks cannot create competing delayed updates, and that the generated result is accessible to keyboard and assistive-technology users.
->
-> Update `README.md` so it accurately documents the files that really exist in the repository. Do not claim that `style.css`, `script.js`, `assets/`, or `LICENSE.md` exist unless those files are actually present. Use the final GitHub Pages URL in the Live Demo section.
->
-> Finally, summarize each problem found and its correction. Keep the result as a corrected version of the provided starter code.
+The application is intended to recommend a random lunch option and be published using GitHub Pages.
 
-## Expected result
+## Important homework requirement
 
-- The original one-file application structure is retained.
-- Broken icon references are corrected.
-- Rapid interaction does not create overlapping results.
-- The interface works with a keyboard and assistive technology.
-- The documentation matches the repository contents.
+This is a debugging and correction assignment.
+
+Do not create a completely new application from scratch. Work only with the provided starter code and prompt. Preserve the existing design, project structure, lunch menu, and core random-selection behavior whenever possible.
+
+## Your task
+
+Carefully investigate both the supplied `index.html` and the original prompt.
+
+### 1. Inspect the starter code
+
+Analyze the existing HTML, CSS, and JavaScript and identify concrete problems, including:
+
+- invalid or outdated Font Awesome icon classes;
+- JavaScript behavior that may produce incorrect or overlapping results;
+- repeated lunch recommendations;
+- missing semantic HTML attributes;
+- keyboard accessibility problems;
+- screen-reader accessibility problems;
+- animation and reduced-motion issues;
+- documentation that does not match the actual project.
+
+Do not assume that every item listed above is necessarily broken. Verify each issue before changing the code.
+
+### 2. Correct the application
+
+Make the smallest reasonable changes required to fix the verified problems.
+
+Requirements:
+
+- Keep the application in the supplied `index.html`.
+- Keep CSS and JavaScript inline unless separation is necessary to fix an actual error.
+- Preserve the original visual design and layout.
+- Preserve the existing lunch options.
+- Preserve the random lunch recommendation behavior.
+- Use valid Font Awesome 6.4.0 Free icon classes.
+- Prevent rapid button clicks from producing competing delayed updates.
+- Avoid showing the same lunch twice in succession when more than one option exists.
+- Ensure that the Generate Lunch button works with a keyboard.
+- Make dynamic results understandable to screen-reader users.
+- Respect the user's reduced-motion preference.
+- Do not introduce frameworks, build tools, package managers, or unnecessary dependencies.
+
+### 3. Correct the documentation
+
+Create or update `README.md` so that it accurately describes the corrected starter project.
+
+The README must contain:
+
+- project title and short description;
+- homework objective;
+- link to the live GitHub Pages demo;
+- table of the problems found and their corrections;
+- explanation of how the application works;
+- actual project structure;
+- local launch instructions;
+- technologies used.
+
+Do not mention files that are not present in the repository. In particular, do not claim that separate `style.css`, `script.js`, `assets/`, or `LICENSE.md` files exist.
+
+Use this live demo URL:
+
+https://buxazich.github.io/RecSys-LLMs/week1/
+
+Use this repository URL:
+
+https://github.com/buxazich/RecSys-LLMs
+
+## Required deliverables
+
+Return the complete corrected contents of:
+
+1. `index.html`
+2. `README.md`
+
+After the files, provide a concise table containing:
+
+| Problem found | Why it was a problem | Correction made |
+| --- | --- | --- |
+
+Do not provide only isolated code snippets or a general explanation. Return complete files that can replace the supplied starter files directly.
+
+## Acceptance criteria
+
+The result is complete when:
+
+- the supplied application structure is retained;
+- the page loads without blocking HTML or JavaScript errors;
+- all displayed icons exist and render correctly;
+- the Generate Lunch button produces one valid result per interaction;
+- rapid clicks cannot create overlapping results;
+- the same recommendation does not appear twice consecutively;
+- dynamic results are announced to assistive technology;
+- keyboard focus is visible;
+- reduced-motion preferences are respected;
+- the README matches the actual repository;
+- the GitHub Pages link points to the working application.
+
+Before answering, review the final files against every acceptance criterion.
