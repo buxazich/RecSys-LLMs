@@ -25,7 +25,6 @@ Analyze the existing HTML, CSS, and JavaScript and identify concrete problems, i
 
 - invalid or outdated Font Awesome icon classes;
 - JavaScript behavior that may produce incorrect or overlapping results;
-- repeated lunch recommendations;
 - missing semantic HTML attributes;
 - keyboard accessibility problems;
 - screen-reader accessibility problems;
@@ -47,7 +46,6 @@ Requirements:
 - Preserve the random lunch recommendation behavior.
 - Use valid Font Awesome 6.4.0 Free icon classes.
 - Prevent rapid button clicks from producing competing delayed updates.
-- Avoid showing the same lunch twice in succession when more than one option exists.
 - Ensure that the Generate Lunch button works with a keyboard.
 - Make dynamic results understandable to screen-reader users.
 - Respect the user's reduced-motion preference.
@@ -101,7 +99,6 @@ The result is complete when:
 - all displayed icons exist and render correctly;
 - the Generate Lunch button produces one valid result per interaction;
 - rapid clicks cannot create overlapping results;
-- the same recommendation does not appear twice consecutively;
 - dynamic results are announced to assistive technology;
 - keyboard focus is visible;
 - reduced-motion preferences are respected;
